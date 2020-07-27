@@ -43,13 +43,13 @@ const readmePrompt = () => {
         },
         {
             type: "list",
-            name: "licenseDesc",
+            name: "license",
             message: "Pick your project's license",
             choices: ["MIT", "Unlicense", "Apache 2.0", "GPL v2"],
         },
         {
             type: "input",
-            name: "confirmContribute",
+            name: "contribution",
             message: "Who or what contributed on your project?",
         },
         {
@@ -66,10 +66,28 @@ const readmePrompt = () => {
         .then((answers) =>  {
             console.log(answers)
             fs.writeFile("README.md", 
-            "#" + answers.title + "\n" +
-            "##Description" + "\n" +
+            "# **" + answers.title + "**" + "\n" +
+            "## Description" + "\n" +
             answers.description + "\n" +
-            "##Table of Contents" + "\n", 
+            "## Table of Contents" + "\n" +
+            "* [Installation](#installation)" + "\n" +
+            "* [Usage](#usage)" + "\n" +
+            "* [License](#license)" + "\n" + 
+            "* [Contribution](#contribution)" + "\n" +
+            "* [Questions](#questions)" + "\n" +
+            "## Usage" + "\n" +
+            answers.usage + "\n" +
+            "## License" + "\n" + 
+            answers.license + "\n" +
+            "## Contribution" + "\n" +
+            answers.contribution + "\n" +
+            "## Questions" + "\n" +
+            "If you have any questions in regards to this project please don't be afraid to contact me!" + "\n" +
+            "You can reach me at my GitHub: https://github.com/" + "\n" +
+            answers.github + "\n" +
+            "or reach me at my email: " + "\n" +
+            answers.email,
+
             
             
             
