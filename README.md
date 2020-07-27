@@ -9,8 +9,11 @@ In order to use this project the user must first download NODE.JS. After install
 After installing the necessary programs, the user can type in their terminal "node index.js". One clicking enter it'll ask the user a series of questions regarding their project. Just answer the questions and then it'll create a readme file for the user!
 
 Below is a video of how it works and it also shows the readme at the end.
-
-
+<video width="400" controls>
+  <source src="/mp4/readme-gen.mp4" type="movie/mp4">
+</video>
+<iframe src="https://drive.google.com/file/d/1NVj3_4wPiXnCIqlpxKxZJiyS5r4QEE05/preview" width="640" height="480"></iframe>
+<img src="/mp4/readme.gif>
 
 ## Questions
 If you have any questions in regards to this project please don't be afraid to contact me!
