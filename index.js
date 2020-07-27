@@ -65,7 +65,7 @@ const readmePrompt = () => {
     ])
         .then((answers) =>  {
             console.log(answers)
-            fs.writeFile("README.md", 
+            fs.writeFile("exampleReadMe.md", 
             "# **" + answers.title + "**" + "\n" +
             "## Description" + "\n" +
             answers.description + "\n" +
@@ -75,6 +75,8 @@ const readmePrompt = () => {
             "* [License](#license)" + "\n" + 
             "* [Contribution](#contribution)" + "\n" +
             "* [Questions](#questions)" + "\n" +
+            "## Installation" + "\n" +
+            answers.installation + "\n" +
             "## Usage" + "\n" +
             answers.usage + "\n" +
             "## License" + "\n" + 
@@ -83,10 +85,8 @@ const readmePrompt = () => {
             answers.contribution + "\n" +
             "## Questions" + "\n" +
             "If you have any questions in regards to this project please don't be afraid to contact me!" + "\n" +
-            "You can reach me at my GitHub: https://github.com/" + "\n" +
-            answers.github + "\n" +
-            "or reach me at my email: " + "\n" +
-            answers.email,
+            "You can reach me at my GitHub: https://github.com/" + answers.github + "\n" +
+            "or reach me at my email: " + answers.email,
 
             
             
